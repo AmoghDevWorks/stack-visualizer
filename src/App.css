@@ -1,0 +1,165 @@
+/* App.css */
+
+body {
+  background-color: #1e1e2f;
+  color: #e1e1e6;
+  font-family: Arial, sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #28293d;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  width: 100%;
+}
+
+.card-header {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #b38bfa;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  flex-grow: 1;
+  font-size: 16px;
+  background-color: #33334a;
+  color: #e1e1e6;
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4e4b8e;
+  color: #e1e1e6;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button.outline {
+  background-color: transparent;
+  border: 2px solid #4e4b8e;
+  color: #4e4b8e;
+}
+
+.button:hover {
+  background-color: #6c63ff;
+}
+
+.message {
+  color: rgb(15, 239, 15);
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error{
+  color:red;
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*  */
+.stack-container {
+  border: 1px solid #444;
+  padding: 12px;
+  border-radius: 6px;
+  background: #33334a;
+  width: 90%;
+  max-height: 300px;
+  overflow-y: auto;
+  
+  /* Firefox custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #b38bfa #1a1a1a;
+}
+
+/* Webkit browsers (Chrome, Safari, etc.) */
+.stack-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.stack-container::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* Track background color */
+  border-radius: 12px; /* Rounded track corners */
+}
+
+.stack-container::-webkit-scrollbar-thumb {
+  background-color: #4D96FF; /* Thumb color */
+  border-radius: 12px; /* Fully rounded thumb */
+}
+
+.stack-container::-webkit-scrollbar-thumb:hover {
+  background-color: #3A86FF; /* Thumb hover color */
+}
+
+/*  */
+.stack-title {
+  font-size: 25px;
+  margin-bottom: 8px;
+  color: #b38bfa;
+  text-align: center;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.stack-item {
+  padding: 12px;
+  border: 1px solid #444;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  background-color: #4e4b8e;
+  color: #e1e1e6;
+  font-weight: 500;
+  text-align: center;
+}
+
+.top-item {
+  background-color: #6c63ff;
+  color: #e1e1e6;
+}
+
+.empty-stack {
+  color: #aaa;
+  text-align: center;
+  font-style: italic;
+}

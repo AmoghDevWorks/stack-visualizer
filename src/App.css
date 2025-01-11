@@ -33,7 +33,7 @@ body {
 }
 
 .card-title {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   color: #b38bfa;
 }
@@ -97,6 +97,7 @@ body {
 }
 
 /*  */
+
 .stack-container {
   border: 1px solid #444;
   padding: 12px;
@@ -107,33 +108,18 @@ body {
   overflow-y: auto;
   
   /* Firefox custom scrollbar */
-  scrollbar-width: thin;
-  scrollbar-color: #b38bfa #1a1a1a;
 }
 
 /* Webkit browsers (Chrome, Safari, etc.) */
 .stack-container::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
-}
-
-.stack-container::-webkit-scrollbar-track {
-  background-color: #1a1a1a; /* Track background color */
-  border-radius: 12px; /* Rounded track corners */
-}
-
-.stack-container::-webkit-scrollbar-thumb {
-  background-color: #4D96FF; /* Thumb color */
-  border-radius: 12px; /* Fully rounded thumb */
-}
-
-.stack-container::-webkit-scrollbar-thumb:hover {
-  background-color: #3A86FF; /* Thumb hover color */
+  display: none;
 }
 
 /*  */
+
 .stack-title {
-  font-size: 25px;
-  margin-bottom: 8px;
+  font-size: 28px;
+  margin-bottom: 10px;
   color: #b38bfa;
   text-align: center;
 }

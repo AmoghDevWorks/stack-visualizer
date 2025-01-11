@@ -8,7 +8,7 @@ const App = () => {
   const inputData = useRef(null);
   const [error,setError] = useState('');
 
-  const colors = ["#7451A1", "#7875C6", "#67A0CD", "#6BC3B3", "#86DBA0"];
+  const colors = ["#86DBA0", "#6BC3B3", "#67A0CD", "#7875C6", "#7451A1" ];
 
   const push = () => {
     const inputValue = inputData.current.value;
@@ -29,9 +29,11 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
         transition: Bounce,
       });
+      setError('');
+      setMessage('');
     }
   };
 
@@ -51,9 +53,11 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
         transition: Bounce,
       });
+      setError('');
+      setMessage('');
     }
   };
 
@@ -74,8 +78,8 @@ const App = () => {
             <button className="button" onClick={push}>Push</button>
             <button className="button outline" onClick={pop}>Pop</button>
           </div>
+          <h3 className="stack-title">Stack Contents:</h3>
           <div className="stack-container">
-            <h3 className="stack-title">Stack Contents:</h3>
             <div className="stack">
               {stack.map((item, index) => (
                 <div

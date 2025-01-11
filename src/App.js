@@ -8,7 +8,7 @@ const App = () => {
   const inputData = useRef(null);
   const [error,setError] = useState('');
 
-  const colors = ["#FF6B6B", "#6BCB77", "#4D96FF", "#9D4EDD", "#F4A261"];
+  const colors = ["#7451A1", "#7875C6", "#67A0CD", "#6BC3B3", "#86DBA0"];
 
   const push = () => {
     const inputValue = inputData.current.value;

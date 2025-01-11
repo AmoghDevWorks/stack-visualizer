@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 import './App.css';
 
 const App = () => {
@@ -20,7 +21,17 @@ const App = () => {
       setMessage(`Pushed "${inputValue}" onto the stack.`); 
       setError(null)
     } else {
-      setError('Please enter a value to push onto the stack.');
+      toast.error('Please enter a value to push onto the stack.', {
+        position: "top-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     }
   };
 
@@ -32,12 +43,23 @@ const App = () => {
       setError(`Popped "${poppedItem}" from the stack.`); 
       setMessage(null);
     } else {
-      setError('Cannot pop from an empty stack.'); 
+      toast.error('Cannot pop from an empty stack.', {
+        position: "top-center",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     }
   };
 
   return (
     <div className="container">
+      <ToastContainer />
       <div className="card">
         <div className="card-header">
           <h2 className="card-title">Stack Visualizer (LIFO)</h2>
